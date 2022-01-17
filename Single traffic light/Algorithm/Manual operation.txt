@@ -1,0 +1,11 @@
+Manual Operation
+1. While performing step 5 of Automatic Operation, if some data is received at the
+   serial port then switch to Manual Operation.
+2. Clear P2.0, P2.1 and P2.2
+3. Check the data that has been received.
+   If the received character is 'R' 
+	Go back to step 3 of automatic operation.
+   If it is 'O'
+	Go back to step 6 of automatic operation.
+   If it is 'G'
+	Go back to step 8 of automatic operation.

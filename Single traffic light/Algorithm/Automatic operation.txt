@@ -1,0 +1,15 @@
+Automatic operation
+1. Clear port 1.
+2. Clear P2.0, P2.1, P2.2
+3. Set P2.0 to enable the RED light
+4. Use a counter to count from from <<how long you want the signal to stay>>
+   to zero with a 1 second delay after each count.
+   As the counter keeps decreasing, keep converting the count to BCD and sending
+   it to port 1 so that it is visible on the 7-segment display.
+5. While step 4 is being executed, also keep checking whether any data is received
+   at the serial port (for Manual Operation).
+6. Clear P2.0 and set P2.1 to enable the ORANGE light.
+7. Repeat steps 4 and 5
+8. Clear P2.1 and set P2.2 to enable the GREEN light.
+9. Repeat steps 4 and 5
+10. Clear P2.2 and go back to step 3.
