@@ -1,0 +1,21 @@
+main
+	__CC2D
+	UART1_Init
+	UART1_Write_Text
+		UART1_Write
+	countAndCheck
+		Dec2Bcd
+		UART1_Data_Ready
+		setDisplay
+			UART1_Read
+			setRed
+				countSec
+					Dec2Bcd
+			setOrange
+				countSec
+					Dec2Bcd
+			setGreen
+				countSec
+					Dec2Bcd
+			UART1_Write_Text
+				UART1_Write
